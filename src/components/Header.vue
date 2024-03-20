@@ -44,7 +44,6 @@ export default {
     display: flex;
 }
 .navigationUl {
-    width: 100%;
     margin: 1% 0;
     padding: 0;
     list-style: none;
