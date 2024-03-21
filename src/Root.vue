@@ -1,6 +1,10 @@
 <template>
     <div class="root">
-        <MainHeader :appTitle="title" />
+        <MainHeader 
+            :appTitle="appTitle" 
+            :githubUrl="githubUrl"
+            :mailAddr="mailAddr"
+        />
 
         <RouterView />
 
@@ -16,7 +20,9 @@ import Footer from './components/Footer.vue'
 export default {
     data() {
         return {
-            title: 'Steady Runner'
+            appTitle: 'Blog Name',
+            githubUrl: 'https://github.com/',
+            mailAddr: 'email@domain.address'
         }
     },
     components: {

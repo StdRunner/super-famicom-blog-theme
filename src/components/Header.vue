@@ -3,10 +3,10 @@
         <RouterLink to="/" class="homeBtn">{{appTitle}}</RouterLink>
 
         <div class="contact">
-            <a href="" class="icon-email">
+            <a :href="'mailto:' + mailAddr" class="icon-email">
                 <font-awesome-icon icon="fa-solid fa-envelope" class="fa-2xl" />
             </a>
-            <a href="" class="icon-github">
+            <a :href="githubUrl" target='_blank' class="icon-github">
                 <font-awesome-icon icon="fa-brands fa-github" class="fa-2xl" />
             </a>
         </div>
@@ -34,7 +34,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
 export default {
     props: {
-        appTitle: String
+        appTitle: String,
+        githubUrl: String,
+        mailAddr: String
     }
 }
 </script>
