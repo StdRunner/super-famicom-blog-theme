@@ -2,6 +2,15 @@
     <div class="header">
         <RouterLink to="/" class="homeBtn">{{appTitle}}</RouterLink>
 
+        <div class="contact">
+            <a href="" class="icon-email">
+                <font-awesome-icon icon="fa-solid fa-envelope" class="fa-2xl" />
+            </a>
+            <a href="" class="icon-github">
+                <font-awesome-icon icon="fa-brands fa-github" class="fa-2xl" />
+            </a>
+        </div>
+
         <div class="navigation">
             <ul class="navigationUl">
                 <li class="navigationLi">
@@ -40,6 +49,19 @@ export default {
     font-size: 48px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
+.contact {
+    width: 30%;
+    float: right;
+    display: flex;
+    justify-content: right;
+}
+
+.icon-github, .icon-email {
+    color: #5577aa;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
 .navigation {
     display: flex;
 }

@@ -3,13 +3,15 @@
         <MainHeader :appTitle="title" />
 
         <RouterView />
+
+        <MainFooter />
     </div>
 </template>
 
 <script>
-import { RouterLink, RouterView } from 'vue-router'
-import Header from './components/Header.vue'
-import HelloWorld from './components/HelloWorld.vue';
+import { RouterLink, RouterView } from 'vue-router';
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue'
 
 export default {
     data() {
@@ -18,7 +20,8 @@ export default {
         }
     },
     components: {
-        MainHeader: Header
+        MainHeader: Header,
+        MainFooter: Footer
     }
 }
 </script >
