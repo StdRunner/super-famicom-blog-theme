@@ -1,7 +1,7 @@
 <template>
     <div class="root">
         <MainHeader 
-            :appTitle="appTitle" 
+            :blogTitle="blogTitle" 
             :githubUrl="githubUrl"
             :mailAddr="mailAddr"
         />
@@ -20,7 +20,7 @@ import Footer from './components/Footer.vue'
 export default {
     data() {
         return {
-            appTitle: 'Blog Name',
+            blogTitle: 'Blog Name',
             githubUrl: 'https://github.com/',
             mailAddr: 'email@domain.address'
         }
@@ -31,7 +31,3 @@ export default {
     }
 }
 </script >
-
-<style>
-
-</style>

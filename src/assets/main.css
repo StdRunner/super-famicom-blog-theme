@@ -1,4 +1,17 @@
+@font-face {
+    font-family: 'Pretendo';
+    src: url('fonts/Pretendo.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SuperFamiFont';
+    src: url('fonts/SuperFamiFont.ttf') format('truetype');
+}
+
 .root {
-    max-width: 80%;
-    margin: 3% auto;
+    max-width: 85%;
+    background-color: #D2D4CF;
+    margin: 1% auto;
+    padding: 2% 5%;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px #939594;
 }

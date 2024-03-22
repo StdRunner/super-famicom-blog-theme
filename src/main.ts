@@ -15,9 +15,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import font awesome icons */
 import {faGithub} from '@fortawesome/free-brands-svg-icons';
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope, faCircle} from '@fortawesome/free-solid-svg-icons';
 
-library.add(faGithub, faEnvelope);
+library.add(faGithub, faEnvelope, faCircle);
 
 const app = createApp(Root)
 
