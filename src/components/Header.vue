@@ -198,7 +198,4 @@ export default {
 .menu:hover {
     color: #939594;
 }
-.selected {
-    color: #939594;
-}
 </style>
