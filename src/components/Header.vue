@@ -5,7 +5,7 @@
         <span class="resetBtn">RESET</span>
     </div>
     <div class="header">
-        <RouterLink to="/" class="blogTitle">{{blogTitle}}</RouterLink>
+        <RouterLink to="/" class="blogTitle" @click="this.nav = ''">{{blogTitle}}</RouterLink>
 
         <div class="contact">
             <tr class="contactBtns">
@@ -44,13 +44,13 @@
                     <RouterLink to="/" class="menu">HOME</RouterLink>
                 </li>
                 <li class="navigationLi">
-                    <RouterLink to="/projects" class="menu">PROJECT</RouterLink>
+                    <RouterLink to="/project" class="menu">PROJECT</RouterLink>
                 </li>
                 <li class="navigationLi">
-                    <RouterLink to="/posts" class="menu">POST</RouterLink>
+                    <RouterLink to="/post" class="menu">POST</RouterLink>
                 </li>
                 <li class="navigationLi">
-                    <RouterLink to="/tags" class="menu">TAG</RouterLink>
+                    <RouterLink to="/tag" class="menu">TAG</RouterLink>
                 </li>
             </ul>
         </div>
@@ -61,11 +61,16 @@
 import { RouterLink, RouterView } from 'vue-router'
 
 export default {
+    data() {
+        return {
+            nav: ''
+        }
+    },
     props: {
         blogTitle: String,
         githubUrl: String,
         mailAddr: String
-    }
+    },
 }
 </script>
 
@@ -151,10 +156,16 @@ export default {
     text-decoration: none;
     margin: 0.5rem;
 }
+.icon-email:hover {
+    color: #4E80DC;
+}
 .icon-github {
     color: #DB4038;
     text-decoration: none;
     margin: 0.5rem;
+}
+.icon-github:hover {
+    color: #FD6250;
 }
 .icon-green {
     color: #26AF80;
@@ -183,5 +194,11 @@ export default {
     font-size: 24px;
     font-family: 'SuperFamiFont';
     margin-right: 1em;
+}
+.menu:hover {
+    color: #939594;
+}
+.selected {
+    color: #939594;
 }
 </style>

@@ -10,18 +10,18 @@ const router = createRouter({
       component: MainView
     },
     {
-      path: '/projects',
-      name: 'projects',
+      path: '/project',
+      name: 'project',
       component: () => import('../views/ProjectsView.vue')
     },
     {
-      path: '/posts',
-      name: 'posts',
+      path: '/post',
+      name: 'post',
       component: () => import('../views/PostsView.vue')
     },
     {
-      path: '/tags',
-      name: 'tags',
+      path: '/tag',
+      name: 'tag',
       component: () => import('../views/TagsView.vue')
     }
   ]
